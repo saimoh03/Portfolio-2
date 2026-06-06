@@ -1,73 +1,65 @@
-# React + TypeScript + Vite
+# Front-End Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek, content-focused professional portfolio web application built with modern web technologies. The project showcases a curated selection of recent work, featuring detailed case-study layouts, clean typography hierarchies, and intuitive navigation
 
-Currently, two official plugins are available:
+**[Live Demo Link](https://saimoh-portfolio-2.vercel.app/)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+### Installation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. **Clone the repository:**
 
-## Expanding the ESLint configuration
+```bash
+git clone https://github.com/saimoh03/Portfolio-2.git
+cd portfolio-2
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. **Install dependencies:**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+npm install
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+
+3. **Run the development server:**
+
+```bash
+npm run dev
+
+```
+
+4. **Build for production:**
+
+```bash
+npm run build
+
+```
+
+## What the project does
+
+This application acts as a central hub to display front-end projects, skills, and professional contact pathways. Key features include:
+
+* **Featured Projects Showcase:** Dynamically loops through and displays curated client-side and framework projects with visual hover transitions.
+
+
+## How users can get started
+
+To run this project locally, follow these steps:
+
+### Prerequisites
+
+* Node.js (v18.0 or higher recommended)
+* npm or yarn
+
+## Tech Stack
+
+| Technology | Purpose |
+| --- | --- |
+| **Vite** | Next-generation build tool and development server
+| **React** | Core component UI Library |
+| **TypeScript** | Strict static type checking and data safety|
+| **Tailwind CSS** | Utility-first styling with modern native plugins|
+| **React Router DOM** | Client-side dynamic routing and case study navigation|
+| **lucide-react** | Clean, optimized vector icon integration |
