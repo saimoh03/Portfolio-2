@@ -1,5 +1,5 @@
 import profile from "@/assets/dummy-image.webp";
-import { Download, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 
 export function Hero() {
   return (
